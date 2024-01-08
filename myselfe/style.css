@@ -1,0 +1,199 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* 背景色を白に変更 */
+}
+
+nav {
+  text-align: center; /* ナビゲーションバー全体を中央寄せ */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex; /* フレックスコンテナとして設定 */
+  justify-content: center; /* 中央揃え */
+  background-color: #ffffff; /* ナビゲーションの背景も白に変更 */
+  margin: auto;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #333; /* 文字色を暗めに変更 */
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 10%;
+}
+
+nav ul li a:hover {
+  background-color: #ddd; /* ホバー時の背景色を変更 */
+}
+
+header {
+  color: #333;
+  text-align: center;
+  padding: 20px 0;
+}
+
+section {
+  background-color: #ffffff; /* セクションの背景色を白に変更 */
+  margin: 20px 0;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+  color: #333;
+}
+
+footer {
+  background-color: #ffffff; /* フッターの背景色を白に変更 */
+  color: #333;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.profile-container {
+  text-align: center;
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+  object-fit: cover;
+}
+
+.main-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-panel {
+  position: fixed; /* 左パネルを固定 */
+  top: 0; /* トップから0に設定 */
+  left: 0; /* 左端に設定 */
+  width: 40%; /* 幅を50%に設定 */
+  height: 100vh; /* ビューポートの高さに合わせる */
+  display: flex; /* フレックスボックスを適用 */
+  align-items: center; /* 垂直方向の中央揃え */
+  justify-content: center; /* 水平方向の中央揃え */
+  background-color: #ffffff; /* 背景色 */
+  box-sizing: border-box; /* パディングを含めた高さにする */
+  border-right: 1px solid #ccc; /* 右側に境界線を追加 */
+}
+
+.profile-container {
+  text-align: center;
+}
+
+.profile-photo {
+  width: 200px; /* 写真のサイズ調整 */
+  height: 200px; /* 写真のサイズ調整 */
+  border-radius: 50%; /* 丸形にするために半径を設定 */
+  margin: 0 auto 10px; /* 余白 */
+  object-fit: cover; /* 写真のフィット */
+}
+
+.right-panel {
+  margin-left: 50%; /* 左パネルの幅を考慮して右パネルを配置 */
+  overflow-y: auto; /* スクロール可能にする */
+  width: 60%; /* 幅を50%に設定 */
+  height: 100vh; /* ビューポートの高さに合わせる */
+  box-sizing: border-box; /* パディングを含めた高さにする */
+}
+
+.date,
+.details {
+  display: block; /* ブロック要素として表示 */
+}
+
+.date {
+  font-weight: bold;
+  margin-bottom: 5px; /* 日付と内容の間の余白 */
+}
+
+.details {
+  vertical-align: top; /* 日付に合わせて上揃え */
+  white-space: normal;
+}
+
+#education ul {
+  list-style: none;
+  padding: 0;
+}
+
+#education li {
+  margin-bottom: 10px;
+}
+
+:root {
+  --primary-color: #2c3e50; /* メインカラー */
+  --secondary-color: #feebb2; /* セカンダリカラー */
+  --text-color: #333; /* テキストカラー */
+  --background-color: #fff; /* 背景カラー */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--secondary-color);
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600; /* 太字 */
+}
+
+nav ul li a {
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: var(--secondary-color);
+  border-radius: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .left-panel {
+    position: static; /* 固定位置を解除 */
+    width: 100%; /* 幅を100%に設定 */
+    height: auto; /* 高さを自動に設定 */
+  }
+
+  .right-panel {
+    margin-left: 0; /* 左マージンをリセット */
+    width: 100%; /* 幅を100%に設定 */
+  }
+
+  .main-container {
+    flex-direction: column; /* コンテンツを縦方向に並べ替え */
+  }
+
+  .profile-photo {
+    width: 150px; /* スマートフォン用の写真サイズに調整 */
+    height: 150px; /* スマートフォン用の写真サイズに調整 */
+  }
+}
+
+
